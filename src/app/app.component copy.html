@@ -1,0 +1,48 @@
+<div id="header">
+  <div class="inner">
+    <div class="header-images">
+      <img src="../assets/apes_dist/{{img1}}.jpg">
+      <img src="../assets/apes_dist/{{img2}}.jpg">
+      <img src="../assets/apes_dist/{{img3}}.jpg">
+      <img src="../assets/apes_dist/{{img4}}.jpg">
+    </div>
+    <div class="header-bottom-buttons desktop">       
+        <a href="https://www.google.com/"><img src="../assets/icon/discord.svg" alt="Discord" style="height: 80%"></a>
+        <a href="https://www.google.com/"><img src="../assets/icon/opensea.svg" alt="OpenSea" style="height: 65%"></a>
+        <a href="https://www.google.com/"><img src="../assets/icon/twitter.svg" alt="Twitter" style="height: 70%"> Twitter</a>  
+    </div>     
+    <div class="header-bottom-buttons mobile">
+        <a href="https://www.google.com/"><img src="../assets/icon/discord-small.svg" alt="Discord" style="height: 80%"></a>
+        <a href="https://www.google.com/"><img src="../assets/icon/opensea-small.svg" alt="OpenSea" style="height: 65%"></a>
+        <a href="https://www.google.com/"><img src="../assets/icon/twitter.svg" alt="Twitter" style="height: 70%"></a>
+    </div>    
+    <div>
+      <app-connect></app-connect>     
+      <input [(ngModel)]="amountregular">
+      <button
+      class="connect"
+      [disabled]="!metamaskService.validChain"
+      >
+      Mint
+      </button>  
+
+      <input [(ngModel)]="amountGape">
+      <button
+      class="connect"
+      [disabled]="!metamaskService.validChain"
+      >
+      Mint (GAPE Holder)
+      </button>
+    </div>
+    <a href="#" class="scroll-down desktop" address="true"></a>
+</div>
+</div>
+<div id="content">
+  <div>
+    <img class="header-image" src="../assets/apes_dist/{{img1}}.jpg">
+    <img class="header-image" src="../assets/apes_dist/{{img2}}.jpg">
+    <img class="header-image" src="../assets/apes_dist/{{img3}}.jpg">
+    <img class="header-image" src="../assets/apes_dist/{{img4}}.jpg">
+  </div>
+</div>
+

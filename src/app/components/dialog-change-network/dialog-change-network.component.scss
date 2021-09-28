@@ -1,0 +1,18 @@
+.dialog-header {
+  background: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+  border-bottom: 1px solid rgb(56, 50, 65);
+  display: flex;
+  padding: 12px 24px;
+
+  h2 {
+    font-size: 20px;
+    color: rgb(244, 238, 255);
+    margin: 0;
+    line-height: 200%;
+    flex: 1;
+  }
+
+  button {
+    color: rgb(244, 238, 255);
+  }
+}

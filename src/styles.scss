@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+image {
+    filter: drop-shadow(0 0 0.5rem black);
+}
+
+.drop-shadow-black {
+    filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.45));
+}
+
+a.rounded-md {
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border: 2px solid black;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+a.rounded-md:hover {
+    color: white !important;
+    background-color: transparent;
+    img {
+        filter: invert(100%);
+    }
+}
+a.rounded-md:hover:before {
+    right: 0;
+    left: auto;
+    width: 100%;
+}
+a.rounded-md:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    content: '';
+    color: white !important;
+    background: black;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}

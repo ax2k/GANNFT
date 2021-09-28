@@ -1,0 +1,15 @@
+<ng-container *ngIf="(ethService.currentAccount$ | async) !== ''; else connectWalletTemplate">
+<!--   <button
+    class="connect"
+    *ngIf="ethService.provider$ | async as provider"
+    [ngSwitch]="provider?.network?.chainId"
+  >
+    <ng-container *ngSwitchCase="4">Rinkeby</ng-container>
+    <ng-container *ngSwitchCase="1">ETH</ng-container>
+    <ng-container *ngSwitchDefault>{{ provider?.network?.name | titlecase }} - UnSupported</ng-container>
+  </button> -->
+  <!-- <button class="wallet-token">{{ ethService.currentAccount$ | async }}</button> -->
+</ng-container>
+<ng-template #connectWalletTemplate>
+  <button class="connect" (click)="connectWallet()">Connect</button>
+</ng-template>

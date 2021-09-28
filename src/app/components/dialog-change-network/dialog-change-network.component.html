@@ -1,0 +1,9 @@
+<div class="dialog-header">
+  <h2>Network Change</h2>
+  <button mat-icon-button (click)="onClick()"><mat-icon>clear</mat-icon></button>
+</div>
+<div class="p-3">
+  <p>You are currently logged-in a unsupported network: {{ networkName | titlecase }}</p>
+  <p>A lot of functionalities will not be supported. Please consider changing network to the KCC main network or KCC Test network.</p>
+  <button mat-stroked-button (click)="metamaskService.switchEthereumChain()">Change Network</button>
+</div>
