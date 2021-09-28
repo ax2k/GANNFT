@@ -22,6 +22,11 @@ a.rounded-md {
     position: relative;
     border: 2px solid black;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+    span {
+      z-index: 10;
+      position: relative;
+    }
 }
 
 a.rounded-md:hover {
@@ -43,9 +48,10 @@ a.rounded-md:before {
     left: 0;
     height: 100%;
     width: 0;
-    z-index: -1;
+    z-index: 0;
     content: '';
     color: white !important;
     background: black;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
 }
